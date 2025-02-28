@@ -1,16 +1,26 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    color: #fff;
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #ffffff;
     text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 header {
@@ -18,62 +28,82 @@ header {
 }
 
 h1 {
-    font-size: 2.5em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 36px;
+    color: #ffcc00;
+    font-weight: bold;
 }
 
-.slogan {
-    font-size: 1.2em;
+.tagline {
+    font-size: 18px;
     font-style: italic;
-    opacity: 0.8;
+    color: #f8f8f8;
 }
 
-/* Description Section */
-.description {
-    max-width: 600px;
-    margin-bottom: 30px;
-}
-
-/* Form Styles */
-.form-container {
-    background: rgba(255, 255, 255, 0.1);
+.about, .investment-form {
+    margin: 20px 0;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    width: 300px;
+    backdrop-filter: blur(5px);
 }
 
 h2 {
-    margin-bottom: 20px;
+    color: #50fa7b;
+    font-size: 24px;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
+p {
+    font-size: 16px;
+    color: #dddddd;
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    border: none;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+form input, form button {
+    width: 80%;
+    max-width: 350px;
+    padding: 12px;
     border-radius: 5px;
-    margin-bottom: 15px;
-    font-size: 1em;
+    border: none;
+    font-size: 16px;
 }
 
-button {
+form input {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    text-align: center;
+}
+
+form button {
     background: #ffcc00;
-    color: #000;
-    font-size: 1.2em;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    color: #121212;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
-button:hover {
-    background: #ffdd33;
+form button:hover {
+    background: #e6b800;
     transform: scale(1.05);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #8be9fd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
